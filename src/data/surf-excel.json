@@ -1,0 +1,113 @@
+{
+  "id": "surf-excel",
+  "name": "Surf Excel Grade",
+  "brand": "Pakeza™",
+  "description": "Premium washing powder matching international brand performance (Surf Excel/Ariel grade)",
+  "targetQuality": "High-class (16-28% LABSA range)",
+  "labsaPercentage": 20,
+  "ingredients": [
+    {
+      "name": "Soda Ash Light (Sodium Carbonate)",
+      "percentage": 35,
+      "role": "Alkaline base, pH control, water softener",
+      "alternatives": ["Washing Soda (same chemical)", "Baking Soda (weaker)", "Sodium Sesquicarbonate"],
+      "note": "Primary alkaline builder"
+    },
+    {
+      "name": "LABSA (acid slurry / sulphonic acid)",
+      "percentage": 20,
+      "role": "Primary surfactant - the main cleaning agent",
+      "alternatives": ["AOS (similar, better in hard water)", "SLES (milder, weaker)", "SLS (strong foamer)", "NANSA (branded LABSA)"],
+      "note": "Critical ingredient - do not substitute if avoidable"
+    },
+    {
+      "name": "Sodium Sulphate (G-Salt)",
+      "percentage": 20,
+      "role": "Filler, improves texture and flow",
+      "alternatives": ["Common Salt (NaCl)", "Sodium Chloride + extra Soda Ash"],
+      "note": "Provides bulk and flow properties"
+    },
+    {
+      "name": "STPP (Sodium Tripolyphosphate)",
+      "percentage": 10,
+      "role": "Builder - binds hard water minerals (calcium/magnesium)",
+      "alternatives": ["4A Zeolite", "Sodium Citrate", "EDTA (small amount)"],
+      "note": "Water softening agent"
+    },
+    {
+      "name": "Sodium Silicate",
+      "percentage": 5,
+      "role": "Anti-corrosion, anti-caking, helps powder structure",
+      "alternatives": ["Reduce % and increase Soda Ash", "Sodium Metasilicate"],
+      "note": "Liquid solution (~34-40%)"
+    },
+    {
+      "name": "CMC (Carboxymethyl Cellulose)",
+      "percentage": 1,
+      "role": "Anti-redeposition - stops removed dirt settling back on fabric",
+      "alternatives": ["Sodium Polyacrylate", "Skip entirely (not recommended)"],
+      "note": "Quality ingredient often skipped by cheap brands"
+    },
+    {
+      "name": "Caustic Soda NaOH (10% solution)",
+      "percentage": 3,
+      "role": "Neutralizes LABSA into active sodium LAS",
+      "alternatives": ["Potassium Hydroxide (KOH)"],
+      "note": "Must be dissolved in water first - never add water to caustic soda"
+    },
+    {
+      "name": "Water (for NaOH solution)",
+      "percentage": 4,
+      "role": "Dissolves caustic soda safely before use",
+      "alternatives": [],
+      "note": "Evaporates during drying - not in final powder, but required for processing"
+    },
+    {
+      "name": "Tinopal / OBA (Optical Brightener)",
+      "percentage": 0.2,
+      "role": "Makes whites appear visibly brighter",
+      "alternatives": ["Generic fluorescent whitening agent (FWA)", "Skip entirely"],
+      "note": "Optical brightening agent"
+    },
+    {
+      "name": "Enzyme (protease/lipase blend)",
+      "percentage": 0.3,
+      "role": "Breaks down protein and grease-based stains",
+      "alternatives": ["Protease only", "Skip entirely"],
+      "note": "May need sourcing from Lahore/Karachi wholesalers"
+    },
+    {
+      "name": "Color Speckles (blue/green)",
+      "percentage": 1,
+      "role": "Visual branding cue, premium appearance",
+      "alternatives": ["Skip entirely", "Food-grade powder dye"],
+      "note": "Purely cosmetic - no cleaning impact"
+    },
+    {
+      "name": "Fragrance",
+      "percentage": 0.5,
+      "role": "Pleasant scent on washed fabric",
+      "alternatives": [],
+      "note": "Fresh fragrance remains on clothes"
+    }
+  ],
+  "totalPercentage": 100,
+  "notes": "Formula includes 4% water for dissolving caustic soda. Water evaporates during drying, final powder is 96% solids + 4% moisture. LABSA concentration is 20% - premium tier.",
+  "safetyWarnings": [
+    "Work in open air or well-ventilated room",
+    "Never add water to caustic soda - always add caustic soda to water",
+    "Wear gloves, goggles, and mask throughout",
+    "Keep children away from work area",
+    "Never mix with chlorine bleach - creates toxic chlorine gas",
+    "Keep a vinegar bottle nearby for minor alkaline skin contact"
+  ],
+  "equipmentNeeded": [
+    "Large plastic drum or steel deg (50L)",
+    "Small plastic bucket (5L) for NaOH solution",
+    "Digital scale (1g accuracy)",
+    "Long steel or plastic paddle for stirring",
+    "Plastic watering can / spray bottle",
+    "Fine mesh sieve for final sifting",
+    "Rubber gloves, goggles, face mask"
+  ]
+}

@@ -1,26 +1,270 @@
+/* app/globals.css - Pakistani Green + Surf Excel Blue/Violet theme */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Pakistani Flag Colors */
+  --color-pakistan-green: #01411C;
+  --color-pakistan-green-light: #026b2e;
+  --color-pakistan-green-dark: #012b13;
+  --color-pakistan-green-bg: #f0f9f0;
+  --color-pakistan-green-50: #f0f9f0;
+  --color-pakistan-green-100: #dcefdc;
+  --color-pakistan-green-200: #b8dfb8;
+  --color-pakistan-green-300: #8ac98a;
+  --color-pakistan-green-400: #5cb35c;
+  --color-pakistan-green-500: #3d8c3d;
+  --color-pakistan-green-600: #026b2e;
+  --color-pakistan-green-700: #01411C;
+  --color-pakistan-green-800: #012b13;
+  
+  /* Surf Excel Blue */
+  --color-surf-blue: #0057a3;
+  --color-surf-blue-light: #0066c4;
+  --color-surf-blue-dark: #004080;
+  --color-surf-blue-50: #e8f0fe;
+  --color-surf-blue-100: #d0e2fd;
+  --color-surf-blue-200: #a1c4fb;
+  --color-surf-blue-300: #6da6f5;
+  --color-surf-blue-400: #3d87ee;
+  --color-surf-blue-500: #1a6cd6;
+  --color-surf-blue-600: #0057a3;
+  --color-surf-blue-700: #004080;
+  --color-surf-blue-800: #002d5c;
+  
+  /* Surf Excel Violet */
+  --color-surf-violet: #6a1b9a;
+  --color-surf-violet-light: #8b24c9;
+  --color-surf-violet-dark: #4a148c;
+  --color-surf-violet-50: #f3e5f5;
+  --color-surf-violet-100: #e1bee7;
+  --color-surf-violet-200: #ce93d8;
+  --color-surf-violet-300: #ba68c8;
+  --color-surf-violet-400: #ab47bc;
+  --color-surf-violet-500: #8e24aa;
+  --color-surf-violet-600: #6a1b9a;
+  --color-surf-violet-700: #4a148c;
+  --color-surf-violet-800: #2a0a4a;
+  
+  /* Supporting Colors */
+  --color-warm-50: #fefcf8;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f9f0;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container-custom {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* Cards with clean design */
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+  padding: 1.25rem;
+  border: 1px solid #dcefdc;
+  transition: box-shadow 0.2s ease;
+}
+
+@media (min-width: 640px) {
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+.card-glass {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
+  padding: 1.25rem;
+  border: 1px solid #dcefdc;
+}
+
+@media (min-width: 640px) {
+  .card-glass {
+    padding: 1.5rem;
+  }
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #01411C;
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.15s ease;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #012b13;
+  box-shadow: 0 4px 12px rgba(1, 65, 28, 0.25);
+}
+
+.btn-secondary {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.75rem;
+  transition: all 0.15s ease;
+  font-size: 0.875rem;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #e2e8f0;
+}
+
+/* Form inputs */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #dcefdc;
+  border-radius: 0.75rem;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #1e293b;
+  background-color: #fafcf8;
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  border-color: #01411C;
+  box-shadow: 0 0 0 3px rgba(1, 65, 28, 0.08);
+  background-color: #ffffff;
+}
+
+.select-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #dcefdc;
+  border-radius: 0.75rem;
+  outline: none;
+  transition: all 0.2s ease;
+  background-color: #fafcf8;
+  color: #1e293b;
+  appearance: none;
+  font-size: 1rem;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2301411C' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.select-field:focus {
+  border-color: #01411C;
+  box-shadow: 0 0 0 3px rgba(1, 65, 28, 0.08);
+  background-color: #ffffff;
+}
+
+.select-field:hover {
+  background-color: #e8f5e8;
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.badge-green {
+  background-color: #dcefdc;
+  color: #01411C;
+}
+
+.badge-blue {
+  background-color: #d0e2fd;
+  color: #0057a3;
+}
+
+.badge-violet {
+  background-color: #e1bee7;
+  color: #6a1b9a;
+}
+
+.badge-teal {
+  background-color: #ccfbf1;
+  color: #0f766e;
+}
+
+.badge-amber {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dcefdc;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8ac98a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5cb35c;
+}
+
+::selection {
+  background: #dcefdc;
+  color: #01411C;
 }
